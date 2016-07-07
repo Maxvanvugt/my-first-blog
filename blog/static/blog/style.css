@@ -1,0 +1,20 @@
+body {
+    background: black;
+    color: white;
+    text-allign: center;
+}
+img {
+  display: block;
+  width:500px;
+  height:500px;
+
+}
+#images {
+    float: left;
+}
+.content {
+    width: 80%;
+    background: red;
+    display: block;
+    margin: 0 auto;
+}

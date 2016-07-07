@@ -1,0 +1,13 @@
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'blog/style.css' %}"/>
+
+{% if all_posts %}
+<h1> My work </h1>
+    <div class="content">
+        {% for post in all_posts %}
+         <div id="images"> <a href="{% url 'blog:detail' post.id%}"> <img src="{{ post.post_image.url }}"> {{post.post_title}} </a> </div>
+        {% endfor %}
+    </div>
+{% else %}
+    <h3> No Posts </h3>
+{% endif %}
